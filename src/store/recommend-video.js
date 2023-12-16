@@ -1,0 +1,38 @@
+export const RecommendVideoData = [
+    {
+        id: 1,
+        img: "https://w.forfun.com/fetch/6d/6dfcc6b806763b6a356a2198184cc9a5.jpeg",
+        title: "Dude You Re Getting A Telescope",
+        time: "3:40",
+        views: "34k views",
+        date: "5 months ago",
+        username: "Gussie French",
+    },
+    {
+        id: 2,
+        img: "https://gagaru.club/uploads/posts/2023-02/1676500100_gagaru-club-p-ochen-krasivie-arti-drakonov-pinterest-81.jpg",
+        title: "Moon Gazing",
+        time: "2:12",
+        views: "54k views",
+        date: "11 months ago",
+        username: "Edward Osborne",
+    },
+    {
+        id: 3,
+        img: "https://webpulse.imgsmail.ru/imgpreview?mb=webpulse&key=pulse_cabinet-image-87a6858c-786f-473f-a3fb-98707249aeba",
+        title: "Moon Gazing",
+        time: "2:12",
+        views: "125k views",
+        date: "4 months ago",
+        username: "Dollie Blair",
+    },
+    {
+        id: 4,
+        img: "https://web-zoopark.ru/wp-content/uploads/2018/06/1-979.jpg",
+        title: "A Good Autoresponder",
+        time: "3:40",
+        views: "45k views",
+        date: "2 months ago",
+        username: "Food & Drink",
+    },
+]

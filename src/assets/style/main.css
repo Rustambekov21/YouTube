@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+::after, ::before, * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+html, body {
+  font-family: "Mulish", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  margin: 3px;
+  padding: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+:root {
+  --menuColor:#898989;
+  --menuHover: #F00;
+  --searchBg: #EBEBEB;
+  --searchColor: #30384C;
+}
+
+.root {
+  display: flex;
+  padding: 0 20px 20px 20px;
+}
+.root-menu {
+  max-width: 220px;
+  min-width: 220px;
+  height: 100vh;
+  overflow-y: scroll;
+  position: fixed;
+  background: #FFF;
+}
+.root-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.root-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 58px;
+  padding-top: 100px;
+}
+.root-link {
+  color: var(--menuColor);
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.root-link img {
+  width: 100%;
+  height: 100%;
+}
+.root-linkF {
+  color: var(--menuColor);
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.root-linkF img {
+  width: 26px;
+  height: 26px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.root-linkF:hover {
+  color: var(--menuHover);
+}
+.root-link:hover {
+  color: var(--menuHover);
+}
+.root-link:hover svg path {
+  fill: #F00;
+  opacity: 1;
+}
+.root-logo {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  position: fixed;
+  background: #FFF;
+  padding-block: 20px 10px;
+}
+.root-header {
+  display: flex;
+  align-items: center;
+  margin-left: 220px;
+  padding-top: 20px;
+  position: fixed;
+  background: #FFF;
+  gap: 60px;
+}
+.root-case {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.root-s {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--searchBg);
+  border-radius: 22px;
+  width: 830px;
+  padding: 12px 23px;
+  margin-bottom: 10px;
+}
+
+.search input {
+  border: none;
+  background: var(--searchBg);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--searchColor);
+  opacity: 0.4;
+  outline: none;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.home {
+  padding-top: 100px;
+  padding-left: 220px;
+}
+
+.favourite-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+.favourite-header img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.favourite-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  overflow-x: scroll;
+}
+.favourite-img {
+  width: 250px;
+  height: 150px;
+}
+.favourite-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 14px;
+}
+.favourite-title {
+  font-size: 16px;
+  padding-block: 10px 4px;
+}
+.favourite-channel__name {
+  font-size: 26px;
+  font-weight: 700;
+}
+.favourite-header__channel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.favourite-video__info {
+  color: #C2C2C2;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.recommended {
+  margin-top: 50px;
+}
+.recommended-header {
+  display: flex;
+  justify-content: space-between;
+}
+.recommended-title {
+  color: #19202C;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 30px;
+}
+.recommended-img {
+  width: 540px;
+  height: 250px;
+}
+.recommended-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 14px;
+}
+.recommended-list {
+  display: flex;
+  gap: 40px;
+  overflow-x: scroll;
+}
+.recommended-video__title {
+  color: #19202C;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  margin-block: 10px 5px;
+}
+.recommended-info {
+  display: flex;
+  justify-content: space-between;
+  color: #C2C2C2;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 20px;
+}
+
+.food {
+  margin-top: 60px;
+}
+.food-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.food-channel {
+  display: flex;
+  align-items: center;
+}
+.food-channel__name {
+  padding-inline: 20px;
+  color: #19202C;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+}
+.food-channel__text {
+  color: #C2C2C2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.food-sub {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.food-sub button {
+  color: #FFF;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #F00;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.food-sub button:hover {
+  background: rgb(208, 0, 0);
+}
+.food-channel__img {
+  width: 50px;
+  height: 50px;
+}
+.food-channel__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.food-list {
+  display: flex;
+  gap: 40px;
+  overflow-x: scroll;
+}
+.food-img {
+  width: 260px;
+  height: 150px;
+}
+.food-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 14px;
+}
+.food-video__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  color: #19202C;
+  padding-block: 10px 4px;
+}
+.food-info {
+  display: flex;
+  justify-content: space-between;
+  color: #C2C2C2;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 20px;
+}/*# sourceMappingURL=main.css.map */
